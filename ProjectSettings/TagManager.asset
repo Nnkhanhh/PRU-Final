@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Trap
+  - Slime
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - GameOver
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 2289084871
+    locked: 0
+  - name: Ground
+    uniqueID: 2565967699
+    locked: 0
+  - name: ForeGround
+    uniqueID: 715499925
+    locked: 0
+  - name: Slime
+    uniqueID: 2747034371
+    locked: 0
+  - name: Player
+    uniqueID: 2312656659
+    locked: 0
+  - name: Item
+    uniqueID: 1187758443
+    locked: 0
+  m_RenderingLayers:
+  - Default
