@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: eb33388ceb738754eaead6e839b826cc
+guid: b88b2da5c2cefe74ba32a79c415eae6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6683126255077902358
-    second: Knight-Hurt_0
-  - first:
-      213: 1902744039177482756
-    second: Knight-Hurt_1
-  - first:
-      213: -4285594652000648524
-    second: Knight-Hurt_2
-  - first:
-      213: 2228037736886391974
-    second: Knight-Hurt_3
+      213: -6861129416186810378
+    second: Arrow03(32x32)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight-Hurt_0
+      name: Arrow03(32x32)_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 42
+        x: 6
+        y: 11
         width: 22
-        height: 22
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae7bef86414c043a0800000000000000
-      internalID: -6683126255077902358
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Hurt_1
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 42
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4027aa95f97e76a10800000000000000
-      internalID: 1902744039177482756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Hurt_2
-      rect:
-        serializedVersion: 2
-        x: 238
-        y: 42
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b2003cbe528684c0800000000000000
-      internalID: -4285594652000648524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Hurt_3
-      rect:
-        serializedVersion: 2
-        x: 338
-        y: 42
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a4574d54849bee10800000000000000
-      internalID: 2228037736886391974
+      spriteID: 6ffa336d52f58c0a0800000000000000
+      internalID: -6861129416186810378
       vertices: []
       indices: 
       edges: []
@@ -223,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Knight-Hurt_0: -6683126255077902358
-      Knight-Hurt_1: 1902744039177482756
-      Knight-Hurt_2: -4285594652000648524
-      Knight-Hurt_3: 2228037736886391974
+      Arrow03(32x32)_0: -6861129416186810378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
