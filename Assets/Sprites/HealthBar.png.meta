@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 581104434b23f0c46a338d484d1ddad1
+guid: fe813f93de91dde4a9947512083b3e98
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2875184811977189179
-    second: Knight-Idle_0
+      213: -8227546954408941770
+    second: HealthBar_0
   - first:
-      213: 430275941079362952
-    second: Knight-Idle_1
+      213: -3178617384780871938
+    second: HealthBar_1
   - first:
-      213: -2237066767585461515
-    second: Knight-Idle_2
+      213: 5032351099696674128
+    second: HealthBar_2
   - first:
-      213: 643102523229453957
-    second: Knight-Idle_3
+      213: 5856585005746452560
+    second: HealthBar_3
   - first:
-      213: -6309253860192765453
-    second: Knight-Idle_4
+      213: -6503669339106013020
+    second: HealthBar_4
   - first:
-      213: -6520041127165385859
-    second: Knight-Idle_5
+      213: -7959300830350487195
+    second: HealthBar_5
+  - first:
+      213: 4778905902034280743
+    second: HealthBar_6
+  - first:
+      213: -5794802862350705069
+    second: HealthBar_7
+  - first:
+      213: 742694783190739037
+    second: HealthBar_8
+  - first:
+      213: -8435055190330730327
+    second: HealthBar_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -128,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight-Idle_0
+      name: HealthBar_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 42
-        width: 28
-        height: 20
+        x: 4
+        y: 10
+        width: 114
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c8508a95aa4918d0800000000000000
-      internalID: -2875184811977189179
+      spriteID: 637ab99e2a1e1dd80800000000000000
+      internalID: -8227546954408941770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Idle_1
+      name: HealthBar_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 42
-        width: 28
-        height: 20
+        x: 126
+        y: 10
+        width: 115
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88dae6f40b5a8f500800000000000000
-      internalID: 430275941079362952
+      spriteID: ef6414f545843e3d0800000000000000
+      internalID: -3178617384780871938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Idle_2
+      name: HealthBar_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 42
-        width: 28
-        height: 21
+        x: 249
+        y: 10
+        width: 114
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fabc3b90a754f0e0800000000000000
-      internalID: -2237066767585461515
+      spriteID: 0557772a9a086d540800000000000000
+      internalID: 5032351099696674128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Idle_3
+      name: HealthBar_3
       rect:
         serializedVersion: 2
-        x: 340
-        y: 42
-        width: 28
-        height: 21
+        x: 371
+        y: 10
+        width: 115
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58ebf3b6652cce800800000000000000
-      internalID: 643102523229453957
+      spriteID: 05875608805c64150800000000000000
+      internalID: 5856585005746452560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Idle_4
+      name: HealthBar_4
       rect:
         serializedVersion: 2
-        x: 440
-        y: 42
-        width: 28
-        height: 20
+        x: 494
+        y: 10
+        width: 114
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f9b271ca070178a0800000000000000
-      internalID: -6309253860192765453
+      spriteID: 4a09cf9a1335eb5a0800000000000000
+      internalID: -6503669339106013020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Idle_5
+      name: HealthBar_5
       rect:
         serializedVersion: 2
-        x: 540
-        y: 42
-        width: 28
-        height: 20
+        x: 616
+        y: 10
+        width: 115
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +265,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d73ae56b3292485a0800000000000000
-      internalID: -6520041127165385859
+      spriteID: 561dc72a012ea8190800000000000000
+      internalID: -7959300830350487195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_6
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 10
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72165c12995125240800000000000000
+      internalID: 4778905902034280743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_7
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 10
+        width: 115
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e5b26bf79b49fa0800000000000000
+      internalID: -5794802862350705069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_8
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 10
+        width: 114
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58ae9868f49e4a00800000000000000
+      internalID: 742694783190739037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBar_9
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 10
+        width: 115
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a89587cef9a0fa80800000000000000
+      internalID: -8435055190330730327
       vertices: []
       indices: 
       edges: []
@@ -263,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -273,12 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Knight-Idle_0: -2875184811977189179
-      Knight-Idle_1: 430275941079362952
-      Knight-Idle_2: -2237066767585461515
-      Knight-Idle_3: 643102523229453957
-      Knight-Idle_4: -6309253860192765453
-      Knight-Idle_5: -6520041127165385859
+      HealthBar_0: -8227546954408941770
+      HealthBar_1: -3178617384780871938
+      HealthBar_2: 5032351099696674128
+      HealthBar_3: 5856585005746452560
+      HealthBar_4: -6503669339106013020
+      HealthBar_5: -7959300830350487195
+      HealthBar_6: 4778905902034280743
+      HealthBar_7: -5794802862350705069
+      HealthBar_8: 742694783190739037
+      HealthBar_9: -8435055190330730327
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

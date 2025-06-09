@@ -17,10 +17,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to this GameObject
     }
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {

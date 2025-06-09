@@ -1,25 +1,32 @@
-﻿using UnityEditor.Tilemaps;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-  private GameManager gameManager;
+    private GameManager gameManager;
+    private Health playerHealth;
 
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
+        playerHealth = GetComponent<Health>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Trap"))
         {
-            gameManager.GameOver();
-            Debug.Log("Game Over UI bật lên");
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(0.5);
+            }
         }
         else if (collision.CompareTag("Slime"))
         {
-            gameManager.GameOver();
-            Debug.Log("Cham vao SLime");
+            //gameManager.GameOver();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(0.5);
+            }
         }
     }
 }
