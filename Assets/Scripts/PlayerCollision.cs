@@ -22,7 +22,6 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.CompareTag("Slime"))
         {
-            //gameManager.GameOver();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(0.5);
