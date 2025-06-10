@@ -5,27 +5,44 @@ public class PlayerCollision : MonoBehaviour
     private GameManager gameManager;
     private Health playerHealth;
 
+    private bool isInDangerZone = false;
+    private float damageInterval = 1f;
+    private float damageTimer = 0f;
+
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
         playerHealth = GetComponent<Health>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.CompareTag("Trap"))
+        if (isInDangerZone && playerHealth != null)
         {
-            if (playerHealth != null)
+            damageTimer += Time.deltaTime;
+            if (damageTimer >= damageInterval)
             {
                 playerHealth.TakeDamage(0.5);
+                damageTimer = 0f;
             }
         }
-        else if (collision.CompareTag("Slime"))
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Trap") || collision.CompareTag("Slime"))
         {
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(0.5);
-            }
+            isInDangerZone = true;
+            damageTimer = damageInterval; // Apply damage immediately on enter
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Trap") || collision.CompareTag("Slime"))
+        {
+            isInDangerZone = false;
+            damageTimer = 0f;
         }
     }
 }

@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Trap
   - Slime
+<<<<<<< HEAD
+  - MovingPlatform
+=======
   - Enemy
+>>>>>>> ed2fa65aafd4fb1d35758ec6563dc82bea7f5bc8
   layers:
   - Default
   - TransparentFX
