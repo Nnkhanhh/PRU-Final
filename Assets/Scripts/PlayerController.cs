@@ -9,20 +9,20 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private bool isGrounded; // Check if the player is on the ground
-    private SpriteRenderer spriteRenderer;
-
+    private GameManager gameManager; // Reference to the GameManager
 
     private void Awake()
     {
         animator = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to this GameObject
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        gameManager = FindAnyObjectByType<GameManager>(); // Find the GameManager in the scene
+	}
 
 
     void Update()
     {
-        HandleMovement();
+        if (gameManager.IsGameOver()||gameManager.IsGameWin())  return; 
+		HandleMovement();
         HandleJump();
         UpdateAnimations();
     }
@@ -35,12 +35,12 @@ public class PlayerController : MonoBehaviour
 
         if (moveInput > 0)
         {
-            spriteRenderer.flipX = false; // Face right
-        }
+			transform.localScale = new Vector3(1, 1, 1); // Face right
+		}
         else if (moveInput < 0)
         {
-            spriteRenderer.flipX = true; // Face left
-        }
+			transform.localScale = new Vector3(-1, 1, 1); // Face left
+		}
     }
 
     private void HandleJump()
@@ -56,6 +56,6 @@ public class PlayerController : MonoBehaviour
         bool isRunning = Mathf.Abs(rb.linearVelocity.x) > 0.1f; // Check if the player is running
         bool isJumping = !isGrounded; // Check if the player is jumping
         animator.SetBool("isRunning", isRunning); // Set the running animation
-        //animator.SetBool("isJumping", isJumping); // Set the jumping animation
+        animator.SetBool("isJumping", isJumping); // Set the jumping animation
     }
 }

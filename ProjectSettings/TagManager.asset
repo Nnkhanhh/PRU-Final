@@ -6,11 +6,9 @@ TagManager:
   tags:
   - Trap
   - Slime
-<<<<<<< HEAD
-  - MovingPlatform
-=======
   - Enemy
->>>>>>> ed2fa65aafd4fb1d35758ec6563dc82bea7f5bc8
+  - MovingPlatform
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -51,11 +49,14 @@ TagManager:
   - name: BackGround
     uniqueID: 2289084871
     locked: 0
+  - name: Ground
+    uniqueID: 2565967699
+    locked: 0
   - name: ForeGround
     uniqueID: 715499925
     locked: 0
-  - name: Ground
-    uniqueID: 2565967699
+  - name: Enemy
+    uniqueID: 2777316297
     locked: 0
   - name: Slime
     uniqueID: 2747034371
@@ -65,6 +66,9 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 1187758443
+    locked: 0
+  - name: Ui
+    uniqueID: 2648319281
     locked: 0
   m_RenderingLayers:
   - Default
