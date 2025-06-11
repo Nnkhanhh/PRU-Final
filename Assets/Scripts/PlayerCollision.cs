@@ -21,5 +21,10 @@ public class PlayerCollision : MonoBehaviour
             gameManager.GameOver();
             Debug.Log("Cham vao SLime");
         }
-    }
+		else if (collision.CompareTag("Enemy"))
+		{
+			gameManager.GameWin();
+			Debug.Log("Cham vao Enemy");
+		}
+	}
 }

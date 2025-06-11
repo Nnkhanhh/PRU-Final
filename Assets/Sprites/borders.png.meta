@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -173,10 +173,10 @@ TextureImporter:
       name: borders_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 288
-        width: 96
-        height: 96
+        x: 0
+        y: 272
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +195,10 @@ TextureImporter:
       name: borders_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 376
-        width: 8
-        height: 8
+        x: 138
+        y: 272
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +217,10 @@ TextureImporter:
       name: borders_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 376
-        width: 8
-        height: 8
+        x: 276
+        y: 272
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: borders_3
       rect:
         serializedVersion: 2
-        x: 158
-        y: 285
-        width: 100
-        height: 102
+        x: 0
+        y: 144
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +261,10 @@ TextureImporter:
       name: borders_4
       rect:
         serializedVersion: 2
-        x: 306
-        y: 290
-        width: 92
-        height: 92
+        x: 138
+        y: 144
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +283,10 @@ TextureImporter:
       name: borders_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 288
-        width: 8
-        height: 8
+        x: 276
+        y: 144
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +305,10 @@ TextureImporter:
       name: borders_6
       rect:
         serializedVersion: 2
-        x: 95
-        y: 288
-        width: 17
-        height: 8
+        x: 0
+        y: 16
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +327,10 @@ TextureImporter:
       name: borders_7
       rect:
         serializedVersion: 2
-        x: 17
-        y: 245
-        width: 83
-        height: 10
+        x: 138
+        y: 16
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +349,10 @@ TextureImporter:
       name: borders_8
       rect:
         serializedVersion: 2
-        x: 101
-        y: 245
-        width: 10
-        height: 10
+        x: 276
+        y: 16
+        width: 138
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,253 +367,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: borders_9
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 162
-        width: 92
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 173b5582439ca8a60800000000000000
-      internalID: 7677169740658619249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_10
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 161
-        width: 94
-        height: 94
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b5f803b790b86a70800000000000000
-      internalID: 8820494035795375537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_11
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 161
-        width: 83
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b29edc728853cca50800000000000000
-      internalID: 6542663217562118443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_12
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 161
-        width: 10
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 008154796d1fd2c40800000000000000
-      internalID: 5489309424797685760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_13
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 34
-        width: 92
-        height: 92
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1563ef6028f825bc0800000000000000
-      internalID: -3795813747294063023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_14
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 35
-        width: 90
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d82bd274afb530770800000000000000
-      internalID: 8575799245937685133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_15
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 106
-        width: 52
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c1a2f2b828b95fe00800000000000000
-      internalID: 1077938670808279580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_16
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 65
-        width: 32
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b0381865c5262160800000000000000
-      internalID: 7000324200579215538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_17
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 34
-        width: 28
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8fa2fc8e4327212f0800000000000000
-      internalID: -1003614195380442376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_18
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 36
-        width: 29
-        height: 51
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d502be20fe5c98380800000000000000
-      internalID: -8968419552594812835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: borders_19
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 34
-        width: 57
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47220a4859889b070800000000000000
-      internalID: 8122673578695991924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a55633c32f397d84d925c81f44d3d065
     internalID: 0
     vertices: []
     indices: 
@@ -621,20 +379,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":138.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       borders_0: -4603182780432533220
       borders_1: 2295092231375942557
-      borders_10: 8820494035795375537
-      borders_11: 6542663217562118443
-      borders_12: 5489309424797685760
-      borders_13: -3795813747294063023
-      borders_14: 8575799245937685133
-      borders_15: 1077938670808279580
-      borders_16: 7000324200579215538
-      borders_17: -1003614195380442376
-      borders_18: -8968419552594812835
-      borders_19: 8122673578695991924
       borders_2: -8087359784509707058
       borders_3: -948465428593465155
       borders_4: -4011614941539444433
@@ -642,7 +392,6 @@ TextureImporter:
       borders_6: -8994708971166892900
       borders_7: 184233471509595590
       borders_8: 8098449391773226786
-      borders_9: 7677169740658619249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

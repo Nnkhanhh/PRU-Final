@@ -9,13 +9,14 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private bool isGrounded; // Check if the player is on the ground
-
+    private GameManager gameManager; // Reference to the GameManager
 
     private void Awake()
     {
         animator = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to this GameObject
-    }
+        gameManager = FindAnyObjectByType<GameManager>(); // Find the GameManager in the scene
+	}
 
     void Start()
     {
@@ -24,7 +25,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        HandleMovement();
+        if (gameManager.IsGameOver()||gameManager.IsGameWin())  return; 
+		HandleMovement();
         HandleJump();
         UpdateAnimations();
     }

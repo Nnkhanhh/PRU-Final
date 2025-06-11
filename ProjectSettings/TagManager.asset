@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trap
   - Slime
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -52,6 +53,9 @@ TagManager:
   - name: ForeGround
     uniqueID: 715499925
     locked: 0
+  - name: Enemy
+    uniqueID: 2777316297
+    locked: 0
   - name: Slime
     uniqueID: 2747034371
     locked: 0
@@ -60,6 +64,9 @@ TagManager:
     locked: 0
   - name: Item
     uniqueID: 1187758443
+    locked: 0
+  - name: Ui
+    uniqueID: 2648319281
     locked: 0
   m_RenderingLayers:
   - Default
