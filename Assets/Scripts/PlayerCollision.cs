@@ -1,25 +1,48 @@
-﻿using UnityEditor.Tilemaps;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-  private GameManager gameManager;
+    private GameManager gameManager;
+    private Health playerHealth;
+
+    private bool isInDangerZone = false;
+    private float damageInterval = 1f;
+    private float damageTimer = 0f;
 
     private void Awake()
     {
         gameManager = FindAnyObjectByType<GameManager>();
+        playerHealth = GetComponent<Health>();
     }
+
+    private void Update()
+    {
+        if (isInDangerZone && playerHealth != null)
+        {
+            damageTimer += Time.deltaTime;
+            if (damageTimer >= damageInterval)
+            {
+                playerHealth.TakeDamage(0.5);
+                damageTimer = 0f;
+            }
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Trap"))
+        if (collision.CompareTag("Trap") || collision.CompareTag("Slime"))
         {
-            gameManager.GameOver();
-            Debug.Log("Game Over UI bật lên");
+            isInDangerZone = true;
+            damageTimer = damageInterval; // Apply damage immediately on enter
         }
-        else if (collision.CompareTag("Slime"))
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Trap") || collision.CompareTag("Slime"))
         {
-            gameManager.GameOver();
-            Debug.Log("Cham vao SLime");
+            isInDangerZone = false;
+            damageTimer = 0f;
         }
 		else if (collision.CompareTag("Enemy"))
 		{

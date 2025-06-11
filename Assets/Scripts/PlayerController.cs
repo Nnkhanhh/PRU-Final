@@ -18,10 +18,6 @@ public class PlayerController : MonoBehaviour
         gameManager = FindAnyObjectByType<GameManager>(); // Find the GameManager in the scene
 	}
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {
@@ -31,18 +27,20 @@ public class PlayerController : MonoBehaviour
         UpdateAnimations();
     }
 
+
     private void HandleMovement()
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
         if (moveInput > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Face right
-        }
+			transform.localScale = new Vector3(1, 1, 1); // Face right
+		}
         else if (moveInput < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Face left
-        }
+			transform.localScale = new Vector3(-1, 1, 1); // Face left
+		}
     }
 
     private void HandleJump()
