@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private bool isGrounded; // Check if the player is on the ground
+    private SpriteRenderer spriteRenderer;
 
 
     private void Awake()
     {
         animator = GetComponent<Animator>(); // Get the Animator component attached to this GameObject
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to this GameObject
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
@@ -25,17 +27,19 @@ public class PlayerController : MonoBehaviour
         UpdateAnimations();
     }
 
+
     private void HandleMovement()
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
         if (moveInput > 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // Face right
+            spriteRenderer.flipX = false; // Face right
         }
         else if (moveInput < 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1); // Face left
+            spriteRenderer.flipX = true; // Face left
         }
     }
 
