@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
   - Trap
   - Slime
+  - Enemy
+  - MovingPlatform
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - Ground
   - GameOver
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -44,17 +46,29 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 3068629027
+  - name: BackGround
+    uniqueID: 2289084871
     locked: 0
   - name: Ground
-    uniqueID: 3380957833
+    uniqueID: 2565967699
     locked: 0
-  - name: Foreground
-    uniqueID: 6987033
+  - name: ForeGround
+    uniqueID: 715499925
     locked: 0
-  - name: Bot
-    uniqueID: 2413140751
+  - name: Enemy
+    uniqueID: 2777316297
+    locked: 0
+  - name: Slime
+    uniqueID: 2747034371
+    locked: 0
+  - name: Player
+    uniqueID: 2312656659
+    locked: 0
+  - name: Item
+    uniqueID: 1187758443
+    locked: 0
+  - name: Ui
+    uniqueID: 2648319281
     locked: 0
   m_RenderingLayers:
   - Default
