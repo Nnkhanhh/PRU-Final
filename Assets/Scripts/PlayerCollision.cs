@@ -35,6 +35,11 @@ public class PlayerCollision : MonoBehaviour
             isInDangerZone = true;
             damageTimer = damageInterval; // Apply damage immediately on enter
         }
+        if (collision.CompareTag("Boss"))
+        {
+            Debug.Log("🚀 StartQuiz() called");
+            FindObjectOfType<QuizManager>().StartQuiz();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -50,4 +55,5 @@ public class PlayerCollision : MonoBehaviour
 			Debug.Log("Cham vao Enemy");
 		}
 	}
+    
 }
