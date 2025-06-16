@@ -46,8 +46,6 @@ public class PlayerCollision : MonoBehaviour
         }
 		else if (collision.CompareTag("Enemy"))
 		{
-			gameManager.GameWin();
-			Debug.Log("Cham vao Enemy");
 		}
 	}
 }
