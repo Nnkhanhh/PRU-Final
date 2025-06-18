@@ -24,9 +24,9 @@ public class QuizManager : MonoBehaviour
     public Button[] optionButtons;
     public GameObject panelQuiz;
     public GameObject gameOverUI;
-    public GameObject winUI;
     public GameObject bossObject;
     public int mapLevel = 1;
+    public bool isQuizActive = false; // Biến này để kiểm tra trạng thái quiz
 
     private List<QuizQuestion> questions;
     private int index = 0;
@@ -35,10 +35,16 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz()
     {
+        panelQuiz.SetActive(false);
         correct = 0;
         wrong = 0;
         index = 0;
         StartCoroutine(GetQuestions());
+    }
+
+    public bool IsQuizActive()
+    {
+        return isQuizActive = true; // Trả về trạng thái quiz
     }
 
     IEnumerator GetQuestions()
@@ -74,6 +80,15 @@ public class QuizManager : MonoBehaviour
         if (index >= questions.Count)
         {
             Debug.Log("✔️ Đã hoàn tất danh sách câu hỏi.");
+            if (correct >= 7) // hoặc >= số lượng bạn muốn để win
+            {
+                Win();
+            }
+            else
+            {
+                Lose(); // hoặc có thể gọi lại quiz, hoặc hiện thông báo
+            }
+
             return;
         }
 
@@ -123,8 +138,9 @@ public class QuizManager : MonoBehaviour
 
     void Win()
     {
-        winUI?.SetActive(true);
         bossObject?.SetActive(false);
+        FindObjectOfType<PlayerController>().canMove = true; // 🔓 Cho phép nhân vật di chuyển lại
+        panelQuiz.SetActive(false); // Ẩn Panel Quiz nếu cần
     }
 
     void Lose()

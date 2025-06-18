@@ -37,8 +37,8 @@ public class PlayerCollision : MonoBehaviour
         }
         if (collision.CompareTag("Boss"))
         {
-            Debug.Log("🚀 StartQuiz() called");
             FindObjectOfType<QuizManager>().StartQuiz();
+            GetComponent<PlayerController>().canMove = false;
         }
     }
 
