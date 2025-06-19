@@ -44,10 +44,10 @@ public class PlayerCollision : MonoBehaviour
             isInDangerZone = false;
             damageTimer = 0f;
         }
-		else if (collision.CompareTag("Enemy"))
-		{
-			gameManager.GameWin();
-			Debug.Log("Cham vao Enemy");
-		}
-	}
+        //else if (collision.CompareTag("Enemy"))
+        //{
+        //    gameManager.GameWin();
+        //    Debug.Log("Cham vao Enemy");
+        //}
+    }
 }
