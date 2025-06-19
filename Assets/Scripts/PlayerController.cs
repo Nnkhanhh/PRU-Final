@@ -1,4 +1,4 @@
-//using UnityEngine;
+﻿//using UnityEngine;
 
 //public class PlayerController : MonoBehaviour
 //{
@@ -73,6 +73,9 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private GameManager gameManager;
     private SpriteRenderer spriteRenderer;
+    private QuizManager quizManager;
+    public bool canMove = true; // Mặc định cho phép di chuyển
+
 
     private void Awake()
     {
@@ -84,8 +87,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (gameManager.IsGameOver() || gameManager.IsGameWin()) return;
-
+        if (!canMove || gameManager.IsGameOver() || gameManager.IsGameWin())
+        {
+            rb.linearVelocity = Vector2.zero; // ⛔ Reset tốc độ để nhân vật đứng yên
+            return;
+        }
         HandleMovement();
         HandleJump();
         UpdateAnimations();

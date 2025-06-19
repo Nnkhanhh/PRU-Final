@@ -5,13 +5,15 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverUi;
     [SerializeField] private GameObject gameWinUi;
+    [SerializeField] private GameObject panelQuiz;
     private bool isGameOver = false;
     private bool isGameWin = false;
 	private void Start()
     {
+        panelQuiz.SetActive(false);
         gameOverUi.SetActive(false); 
         gameWinUi.SetActive(false);
-	}
+    }
 
     public void GameOver()
     {
