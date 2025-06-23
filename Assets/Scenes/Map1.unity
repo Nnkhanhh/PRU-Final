@@ -226570,7 +226570,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -1646648015
+  m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1001 &624539049
@@ -347582,6 +347582,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 1147365860}
+  canMove: 1
 --- !u!61 &1486302443
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -349190,6 +349191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverUi: {fileID: 1377783271}
   gameWinUi: {fileID: 500566007}
+  panelQuiz: {fileID: 0}
 --- !u!4 &1594823513
 Transform:
   m_ObjectHideFlags: 0
