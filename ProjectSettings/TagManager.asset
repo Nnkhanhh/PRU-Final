@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - MovingPlatform
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

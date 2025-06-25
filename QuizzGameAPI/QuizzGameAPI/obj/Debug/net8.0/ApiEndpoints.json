@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "QuizAPI.Controllers.QuizController",
+    "Method": "GetRandomByLevel",
+    "RelativePath": "api/Quiz/map/{level}/random",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
