@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 	}
     public void GotoMenu()
     {
-        SceneManager.LoadScene("Menu"); // Replace with your main menu scene name
+        SceneManager.LoadScene("Menu");
         Time.timeScale = 1;
     }
 

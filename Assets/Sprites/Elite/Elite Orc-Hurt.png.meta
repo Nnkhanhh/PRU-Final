@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 7f101156d9f431b4da2b3915cda06cff
+guid: aae23f96912eed44ebdeacf396fd8479
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6417244348779880327
-    second: Knight-Attack01_0
+      213: 822034655883654956
+    second: Elite Orc-Hurt_0
   - first:
-      213: -2197864050038063627
-    second: Knight-Attack01_1
+      213: -5414797308512660932
+    second: Elite Orc-Hurt_1
   - first:
-      213: -2744768363328942126
-    second: Knight-Attack01_2
+      213: 1670487150711235711
+    second: Elite Orc-Hurt_2
   - first:
-      213: 105135283509378702
-    second: Knight-Attack01_3
-  - first:
-      213: 6568531240022346211
-    second: Knight-Attack01_4
-  - first:
-      213: 7074226883472064701
-    second: Knight-Attack01_5
-  - first:
-      213: 3053847995365121007
-    second: Knight-Attack01_6
+      213: 3121336243037631163
+    second: Elite Orc-Hurt_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,79 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight-Attack01_0
+      name: Elite Orc-Hurt_0
       rect:
         serializedVersion: 2
-        x: 40
+        x: 39
         y: 42
-        width: 28
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78f58e53cb1ae0950800000000000000
-      internalID: 6417244348779880327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_1
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 42
-        width: 21
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5fd31e09a4e9f71e0800000000000000
-      internalID: -2197864050038063627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_2
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 42
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df4c0947bf98e9d0800000000000000
-      internalID: -2744768363328942126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_3
-      rect:
-        serializedVersion: 2
-        x: 341
-        y: 40
         width: 31
-        height: 28
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,64 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8ebfeabbf3857100800000000000000
-      internalID: 105135283509378702
+      spriteID: c2771090a24786b00800000000000000
+      internalID: 822034655883654956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_4
+      name: Elite Orc-Hurt_1
       rect:
         serializedVersion: 2
-        x: 441
-        y: 40
-        width: 31
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e986997c5c182b50800000000000000
-      internalID: 6568531240022346211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_5
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 40
-        width: 28
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db00fd1aed3bc2260800000000000000
-      internalID: 7074226883472064701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_6
-      rect:
-        serializedVersion: 2
-        x: 641
+        x: 139
         y: 42
-        width: 27
-        height: 19
+        width: 31
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +159,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: febd6c16292716a20800000000000000
-      internalID: 3053847995365121007
+      spriteID: c329c576986cad4b0800000000000000
+      internalID: -5414797308512660932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Hurt_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 42
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f746ff38633ce2710800000000000000
+      internalID: 1670487150711235711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Hurt_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 42
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb27fc686c6315b20800000000000000
+      internalID: 3121336243037631163
       vertices: []
       indices: 
       edges: []
@@ -297,14 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Knight-Attack01_0: 6417244348779880327
-      Knight-Attack01_1: -2197864050038063627
-      Knight-Attack01_2: -2744768363328942126
-      Knight-Attack01_3: 105135283509378702
-      Knight-Attack01_4: 6568531240022346211
-      Knight-Attack01_5: 7074226883472064701
-      Knight-Attack01_6: 3053847995365121007
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
