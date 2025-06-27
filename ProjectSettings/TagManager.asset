@@ -53,17 +53,20 @@ TagManager:
   - name: Ground
     uniqueID: 2565967699
     locked: 0
-  - name: ForeGround
-    uniqueID: 715499925
-    locked: 0
   - name: Enemy
     uniqueID: 2777316297
     locked: 0
   - name: Slime
     uniqueID: 2747034371
     locked: 0
+  - name: ForeGround
+    uniqueID: 715499925
+    locked: 0
   - name: Player
     uniqueID: 2312656659
+    locked: 0
+  - name: Boss
+    uniqueID: 2308862509
     locked: 0
   - name: Item
     uniqueID: 1187758443
