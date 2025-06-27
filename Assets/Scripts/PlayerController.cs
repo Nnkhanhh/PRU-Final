@@ -59,6 +59,7 @@
 //        animator.SetBool("isJumping", isJumping); // Set the jumping animation
 //    }
 //}
+using System.Diagnostics;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -75,7 +76,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private QuizManager quizManager;
     public bool canMove = true; // Mặc định cho phép di chuyển
-
+    private bool hasStarted = false;
 
     private void Awake()
     {
@@ -95,6 +96,16 @@ public class PlayerController : MonoBehaviour
         HandleMovement();
         HandleJump();
         UpdateAnimations();
+
+        if (!hasStarted && IsMovementInput())
+        {
+            hasStarted = true;
+            if (LevelTimer.Instance != null)
+            {
+                LevelTimer.Instance.StartTimer();
+                UnityEngine.Debug.Log("🟢 Timer started on first movement!");
+            }
+        }
     }
 
     private void HandleMovement()
@@ -124,5 +135,13 @@ public class PlayerController : MonoBehaviour
         bool isJumping = !isGrounded;
         animator.SetBool("isRunning", isRunning);
         animator.SetBool("isJumping", isJumping);
+    }
+
+    bool IsMovementInput()
+    {
+        return Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) ||
+               Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+               Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) ||
+               Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow);
     }
 }

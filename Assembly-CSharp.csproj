@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ArrowCollision.cs" />
+    <Compile Include="Assets\Scripts\LevelTimer.cs" />
     <Compile Include="Assets\Scripts\QuizManager.cs" />
     <Compile Include="Assets\Scripts\HealthCollectible.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
