@@ -49,6 +49,9 @@ public class PlayerCollision : MonoBehaviour
             isInDangerZone = false;
             damageTimer = 0f;
         }
-    }
+		else if (collision.CompareTag("Enemy"))
+		{
+		}
+	}
     
 }
