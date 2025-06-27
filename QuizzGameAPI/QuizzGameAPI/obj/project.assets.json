@@ -5157,24 +5157,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hotha\\.nuget\\packages\\": {},
-    "D:\\Visual Studio Code\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Ky7\\Pru\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\QuizzGameAPI.csproj",
+      "projectUniqueName": "C:\\Sem7\\PRU\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\QuizzGameAPI.csproj",
       "projectName": "QuizzGameAPI",
-      "projectPath": "D:\\Ky7\\Pru\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\QuizzGameAPI.csproj",
-      "packagesPath": "C:\\Users\\hotha\\.nuget\\packages\\",
-      "outputPath": "D:\\Ky7\\Pru\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\obj\\",
+      "projectPath": "C:\\Sem7\\PRU\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\QuizzGameAPI.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Sem7\\PRU\\PRU-Final\\QuizzGameAPI\\QuizzGameAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Visual Studio Code\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hotha\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5182,6 +5177,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5239,7 +5235,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
