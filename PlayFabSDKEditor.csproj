@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{185FCE70-BA26-1F6D-7284-496D10EE0658}</ProjectGuid>
+    <ProjectGuid>{FB91391F-A6E5-273E-7EAC-FFC85B791842}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PlayFabSDKEditor</AssemblyName>
@@ -55,7 +55,6 @@
     <UnityVersion>6000.1.2f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -542,10 +541,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.WebGL.Extensions">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
@@ -1115,7 +1110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PlayFab.csproj">
-      <Project>{2D33F055-5820-F364-5973-1C699AFB8E67}</Project>
+      <Project>{9FC8FFD1-B17C-AAB0-6DEF-BBFB8A23FCFA}</Project>
       <Name>PlayFab</Name>
     </ProjectReference>
   </ItemGroup>
