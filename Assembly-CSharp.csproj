@@ -81,7 +81,6 @@
     <Compile Include="Assets\Scripts\AxeSwingTrap.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\TriggerQuizZone.cs" />
-    <Compile Include="Assets\Scripts\LavaDame.cs" />
     <Compile Include="Assets\Scripts\ShottingTrap.cs" />
     <Compile Include="Assets\Scripts\MovingFlatform.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
@@ -110,14 +109,12 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Packages\System.Data.SqlClient.4.9.0\lib\netstandard2.0\System.Data.SqlClient.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Packages\System.Data.SqlClient.4.9.0\lib\netstandard2.0\System.Data.SqlClient.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -599,10 +596,6 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Data.SqlClient">
-      <HintPath>Assets\Packages\System.Data.SqlClient.4.9.0\lib\netstandard2.0\System.Data.SqlClient.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
