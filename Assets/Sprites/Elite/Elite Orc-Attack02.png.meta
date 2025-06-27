@@ -1,28 +1,40 @@
 fileFormatVersion: 2
-guid: 7f101156d9f431b4da2b3915cda06cff
+guid: 3ef8a077440988948a3ac5037e2eea74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6417244348779880327
-    second: Knight-Attack01_0
+      213: -7544755369295406761
+    second: Elite Orc-Attack02_0
   - first:
-      213: -2197864050038063627
-    second: Knight-Attack01_1
+      213: -1726026629415147386
+    second: Elite Orc-Attack02_1
   - first:
-      213: -2744768363328942126
-    second: Knight-Attack01_2
+      213: -5349197159982246023
+    second: Elite Orc-Attack02_2
   - first:
-      213: 105135283509378702
-    second: Knight-Attack01_3
+      213: 3886757201721729882
+    second: Elite Orc-Attack02_3
   - first:
-      213: 6568531240022346211
-    second: Knight-Attack01_4
+      213: 6651008573887216032
+    second: Elite Orc-Attack02_4
   - first:
-      213: 7074226883472064701
-    second: Knight-Attack01_5
+      213: 5644561854762784723
+    second: Elite Orc-Attack02_5
   - first:
-      213: 3053847995365121007
-    second: Knight-Attack01_6
+      213: 6442361144720085342
+    second: Elite Orc-Attack02_6
+  - first:
+      213: -211553277049660560
+    second: Elite Orc-Attack02_7
+  - first:
+      213: -2585099606157549685
+    second: Elite Orc-Attack02_8
+  - first:
+      213: -4353344977989936601
+    second: Elite Orc-Attack02_9
+  - first:
+      213: -9082029098561853437
+    second: Elite Orc-Attack02_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -131,13 +143,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Knight-Attack01_0
+      name: Elite Orc-Attack02_0
       rect:
         serializedVersion: 2
-        x: 40
+        x: 41
         y: 42
-        width: 28
-        height: 20
+        width: 30
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78f58e53cb1ae0950800000000000000
-      internalID: 6417244348779880327
+      spriteID: 7591de727f4ab4790800000000000000
+      internalID: -7544755369295406761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_1
+      name: Elite Orc-Attack02_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 42
-        width: 21
-        height: 26
+        x: 141
+        y: 41
+        width: 41
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,41 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fd31e09a4e9f71e0800000000000000
-      internalID: -2197864050038063627
+      spriteID: 68868d8ecebeb08e0800000000000000
+      internalID: -1726026629415147386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_2
+      name: Elite Orc-Attack02_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 42
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2df4c0947bf98e9d0800000000000000
-      internalID: -2744768363328942126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Knight-Attack01_3
-      rect:
-        serializedVersion: 2
-        x: 341
+        x: 222
         y: 40
-        width: 31
+        width: 54
         height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,19 +202,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8ebfeabbf3857100800000000000000
-      internalID: 105135283509378702
+      spriteID: 977dab53685d3c5b0800000000000000
+      internalID: -5349197159982246023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_4
+      name: Elite Orc-Attack02_3
       rect:
         serializedVersion: 2
-        x: 441
+        x: 322
         y: 40
-        width: 31
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53a0d0051980f530800000000000000
+      internalID: 3886757201721729882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Attack02_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 42
+        width: 47
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -234,20 +246,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e986997c5c182b50800000000000000
-      internalID: 6568531240022346211
+      spriteID: 0a9ff943f012d4c50800000000000000
+      internalID: 6651008573887216032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_5
+      name: Elite Orc-Attack02_5
       rect:
         serializedVersion: 2
         x: 541
-        y: 40
-        width: 28
-        height: 21
+        y: 41
+        width: 41
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db00fd1aed3bc2260800000000000000
-      internalID: 7074226883472064701
+      spriteID: 3d71bd9c913855e40800000000000000
+      internalID: 5644561854762784723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight-Attack01_6
+      name: Elite Orc-Attack02_6
       rect:
         serializedVersion: 2
-        x: 641
-        y: 42
-        width: 27
-        height: 19
+        x: 622
+        y: 40
+        width: 54
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +290,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: febd6c16292716a20800000000000000
-      internalID: 3053847995365121007
+      spriteID: e51d1d9f35dd76950800000000000000
+      internalID: 6442361144720085342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Attack02_7
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 40
+        width: 47
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07b92665a69601df0800000000000000
+      internalID: -211553277049660560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Attack02_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 42
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f1af9ca91ef1cd0800000000000000
+      internalID: -2585099606157549685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Attack02_9
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 41
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72add2abecfc593c0800000000000000
+      internalID: -4353344977989936601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Attack02_10
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 35
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308a57c47a626f180800000000000000
+      internalID: -9082029098561853437
       vertices: []
       indices: 
       edges: []
@@ -298,13 +398,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Knight-Attack01_0: 6417244348779880327
-      Knight-Attack01_1: -2197864050038063627
-      Knight-Attack01_2: -2744768363328942126
-      Knight-Attack01_3: 105135283509378702
-      Knight-Attack01_4: 6568531240022346211
-      Knight-Attack01_5: 7074226883472064701
-      Knight-Attack01_6: 3053847995365121007
+      Elite Orc-Attack02_0: -7544755369295406761
+      Elite Orc-Attack02_1: -1726026629415147386
+      Elite Orc-Attack02_10: -9082029098561853437
+      Elite Orc-Attack02_2: -5349197159982246023
+      Elite Orc-Attack02_3: 3886757201721729882
+      Elite Orc-Attack02_4: 6651008573887216032
+      Elite Orc-Attack02_5: 5644561854762784723
+      Elite Orc-Attack02_6: 6442361144720085342
+      Elite Orc-Attack02_7: -211553277049660560
+      Elite Orc-Attack02_8: -2585099606157549685
+      Elite Orc-Attack02_9: -4353344977989936601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

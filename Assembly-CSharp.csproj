@@ -70,14 +70,17 @@
     <Compile Include="Assets\Scripts\PlayFabLogin.cs" />
     <Compile Include="Assets\Scripts\Slime.cs" />
     <Compile Include="Assets\Scripts\EnemyProjectile.cs" />
+    <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\ArrowTrap.cs" />
     <Compile Include="Assets\Scripts\FinishPoint.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\TriggerQuizZone.cs" />
     <Compile Include="Assets\Scripts\MovingFlatform.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
+    <Compile Include="Assets\Scripts\BossBehaviour.cs" />
     <Compile Include="Assets\Scripts\AuthUIManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MapManager.cs" />

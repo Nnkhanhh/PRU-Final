@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: e67dc8ee676cfc543bb09784013fa13b
+guid: aae23f96912eed44ebdeacf396fd8479
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 559631843559397421
-    second: Login_0
+      213: 822034655883654956
+    second: Elite Orc-Hurt_0
+  - first:
+      213: -5414797308512660932
+    second: Elite Orc-Hurt_1
+  - first:
+      213: 1670487150711235711
+    second: Elite Orc-Hurt_2
+  - first:
+      213: 3121336243037631163
+    second: Elite Orc-Hurt_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Login_0
+      name: Elite Orc-Hurt_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 6000
-        height: 3000
+        x: 39
+        y: 42
+        width: 31
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d28da58523634c700800000000000000
-      internalID: 559631843559397421
+      spriteID: c2771090a24786b00800000000000000
+      internalID: 822034655883654956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Hurt_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 42
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c329c576986cad4b0800000000000000
+      internalID: -5414797308512660932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Hurt_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 42
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f746ff38633ce2710800000000000000
+      internalID: 1670487150711235711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elite Orc-Hurt_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 42
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb27fc686c6315b20800000000000000
+      internalID: 3121336243037631163
       vertices: []
       indices: 
       edges: []
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Login_0: 559631843559397421
+      Elite Orc-Hurt_0: 822034655883654956
+      Elite Orc-Hurt_1: -5414797308512660932
+      Elite Orc-Hurt_2: 1670487150711235711
+      Elite Orc-Hurt_3: 3121336243037631163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

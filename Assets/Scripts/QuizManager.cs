@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
-using TMPro; // <- THÊM DÒNG NÀY
+using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,6 +18,7 @@ public class QuizQuestion
     public string correctOption;
 }
 
+
 public class QuizManager : MonoBehaviour
 {
     public TMP_Text questionText; // <- PHẢI LÀ TMP_Text nếu bạn dùng TextMeshPro
@@ -28,6 +29,11 @@ public class QuizManager : MonoBehaviour
     public int mapLevel = 1;
     public bool isQuizActive = false; // Biến này để kiểm tra trạng thái quiz
 
+    public Animator bossAnimator;
+    public Animator playerAnimator;
+    private BossBehaviour boss;
+
+
     private List<QuizQuestion> questions;
     private int index = 0;
     private int correct = 0;
@@ -35,6 +41,7 @@ public class QuizManager : MonoBehaviour
 
     public void StartQuiz()
     {
+        boss = FindObjectOfType<BossBehaviour>();
         panelQuiz.SetActive(false);
         correct = 0;
         wrong = 0;
@@ -120,14 +127,83 @@ public class QuizManager : MonoBehaviour
     {
         panelQuiz.SetActive(false);
 
+        if (string.IsNullOrEmpty(selected.ToString()))
+        {
+            return; 
+        }
+
         if (selected.ToString() == correctOption)
+        {
             correct++;
+
+            if (boss != null)
+            {
+                float damagePerCorrect = boss.HitPointslMax / 10f;
+                boss.TakeHit(damagePerCorrect);
+            }
+            if (bossAnimator != null)
+            {
+                bossAnimator.SetTrigger("BossHurt");
+            }
+            if (playerAnimator != null)
+            {
+                int randomAttack = Random.Range(1, 4);
+
+                switch (randomAttack)
+                {
+                    case 1:
+                        playerAnimator.SetTrigger("Attack1");
+                        break;
+                    case 2:
+                        playerAnimator.SetTrigger("Attack2");
+                        break;
+                    case 3:
+                        playerAnimator.SetTrigger("Attack3");
+                        break;
+                }
+            }
+        }
         else
+        {
             wrong++;
 
-        if (correct >= 20)
-            Win();
-        else if (wrong >= 5)
+            var playerHealth = FindObjectOfType<Health>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(0.5);
+            }
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetTrigger("hurt");
+            }
+            if (bossAnimator != null)
+            {
+                bossAnimator.Play("BossMap4", 0, 0f);
+
+                if (Random.Range(1, 3) == 1)
+                {
+                    bossAnimator.SetTrigger("BossAttack1");
+                }
+                else
+                {
+                    bossAnimator.SetTrigger("BossAttack2");
+                }
+            }
+        }
+
+        var playerHealth1 = FindObjectOfType<Health>();
+        if (playerHealth1 != null && playerHealth1.currentHealth <= 0)
+        {
+            StartCoroutine(HandlePlayerDeath());
+            return;
+        }
+
+        if (boss != null && boss.HitPoints <= 0)
+        {
+            Win(); 
+            return; 
+        }
+        else if (wrong >= 10)
             Lose();
         else
         {
@@ -135,12 +211,46 @@ public class QuizManager : MonoBehaviour
             ShowNext();
         }
     }
+    IEnumerator HandlePlayerDeath()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        gameOverUI?.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    IEnumerator PlayBossDeathThenWin()
+    {
+        if (bossAnimator != null)
+        {
+            bossAnimator.SetTrigger("BossHurt");
+
+            float hurtTime = GetAnimationLength("BossHurt");
+            yield return new WaitForSeconds(hurtTime);
+
+            bossAnimator.SetTrigger("BossDeath");
+
+            float deathTime = GetAnimationLength("BossDead");
+            yield return new WaitForSeconds(deathTime);
+        }
+
+        bossObject?.SetActive(false);
+        FindObjectOfType<PlayerController>().canMove = true;
+        panelQuiz.SetActive(false);
+    }
+    float GetAnimationLength(string clipName)
+    {
+        foreach (var clip in bossAnimator.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == clipName)
+                return clip.length;
+        }
+        return 1f; 
+    }
 
     void Win()
     {
-        bossObject?.SetActive(false);
-        FindObjectOfType<PlayerController>().canMove = true; // 🔓 Cho phép nhân vật di chuyển lại
-        panelQuiz.SetActive(false); // Ẩn Panel Quiz nếu cần
+        StartCoroutine(PlayBossDeathThenWin());
     }
 
     void Lose()
