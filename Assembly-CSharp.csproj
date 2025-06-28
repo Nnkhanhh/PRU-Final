@@ -61,6 +61,8 @@
     <Analyzer Include="D:\Unity\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ArrowCollision.cs" />
+    <Compile Include="Assets\Scripts\LevelTimer.cs" />
     <Compile Include="Assets\Scripts\QuizManager.cs" />
     <Compile Include="Assets\Scripts\HealthCollectible.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -70,14 +72,17 @@
     <Compile Include="Assets\Scripts\PlayFabLogin.cs" />
     <Compile Include="Assets\Scripts\Slime.cs" />
     <Compile Include="Assets\Scripts\EnemyProjectile.cs" />
+    <Compile Include="Assets\Scripts\AxeDamage.cs" />
     <Compile Include="Assets\Scripts\BossHealthBar.cs" />
     <Compile Include="Assets\Scripts\ArrowTrap.cs" />
     <Compile Include="Assets\Scripts\FinishPoint.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Scripts\EnemyDamage.cs" />
+    <Compile Include="Assets\Scripts\AxeSwingTrap.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\TriggerQuizZone.cs" />
+    <Compile Include="Assets\Scripts\ShottingTrap.cs" />
     <Compile Include="Assets\Scripts\MovingFlatform.cs" />
     <Compile Include="Assets\Scripts\GameSession.cs" />
     <Compile Include="Assets\Scripts\BossBehaviour.cs" />
