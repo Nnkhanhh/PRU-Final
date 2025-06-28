@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: f827b92f8e58dab4484f894c9692def4
+guid: 21737ef024709a04a98d1c55bcc954c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6967218827304948987
-    second: Orc rider-Idle_0
+      213: 3997445265733366731
+    second: Armored Axeman-Attack01_0
   - first:
-      213: -2582689681796817123
-    second: Orc rider-Idle_1
+      213: -5461305303558310580
+    second: Armored Axeman-Attack01_1
   - first:
-      213: 5239070887845672902
-    second: Orc rider-Idle_2
+      213: 8453872276816031
+    second: Armored Axeman-Attack01_2
   - first:
-      213: 8711236559198195290
-    second: Orc rider-Idle_3
+      213: -7904521130885373862
+    second: Armored Axeman-Attack01_3
   - first:
-      213: -5612623993386223237
-    second: Orc rider-Idle_4
+      213: -4850298926879656322
+    second: Armored Axeman-Attack01_4
   - first:
-      213: -600239269196264424
-    second: Orc rider-Idle_5
+      213: -418905635014567918
+    second: Armored Axeman-Attack01_5
+  - first:
+      213: -223594862326531975
+    second: Armored Axeman-Attack01_6
+  - first:
+      213: 6909140869075515115
+    second: Armored Axeman-Attack01_7
+  - first:
+      213: -9000368032014392546
+    second: Armored Axeman-Attack01_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -111,29 +120,126 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orc rider-Idle_0
+      name: Armored Axeman-Attack01_0
       rect:
         serializedVersion: 2
-        x: 36
+        x: 43
         y: 42
-        width: 34
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3ba113a47c97730800000000000000
+      internalID: 3997445265733366731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Axeman-Attack01_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 42
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45337bf2cb8534b0800000000000000
+      internalID: -5461305303558310580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Axeman-Attack01_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 42
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90490680c80e1000800000000000000
+      internalID: 8453872276816031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Axeman-Attack01_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 42
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50220259ef7d4290800000000000000
+      internalID: -7904521130885373862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Axeman-Attack01_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 38
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7631e0f2d640bcb0800000000000000
+      internalID: -4850298926879656322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armored Axeman-Attack01_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 38
+        width: 30
         height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -143,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 50b2316f3677f4f90800000000000000
-      internalID: -6967218827304948987
+      spriteID: 2181c8e5b8fbf2af0800000000000000
+      internalID: -418905635014567918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc rider-Idle_1
+      name: Armored Axeman-Attack01_6
       rect:
         serializedVersion: 2
-        x: 136
-        y: 42
-        width: 34
-        height: 30
+        x: 645
+        y: 39
+        width: 29
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d1f1f670b61782cd0800000000000000
-      internalID: -2582689681796817123
+      spriteID: 978bc6948a1a5ecf0800000000000000
+      internalID: -223594862326531975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc rider-Idle_2
+      name: Armored Axeman-Attack01_7
       rect:
         serializedVersion: 2
-        x: 236
-        y: 42
-        width: 33
-        height: 31
+        x: 745
+        y: 39
+        width: 29
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c7b127f63be4b840800000000000000
-      internalID: 5239070887845672902
+      spriteID: be63164a30332ef50800000000000000
+      internalID: 6909140869075515115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Orc rider-Idle_3
+      name: Armored Axeman-Attack01_8
       rect:
         serializedVersion: 2
-        x: 336
-        y: 42
-        width: 33
-        height: 31
+        x: 841
+        y: 39
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,52 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a5e87691f7784e870800000000000000
-      internalID: 8711236559198195290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc rider-Idle_4
-      rect:
-        serializedVersion: 2
-        x: 436
-        y: 42
-        width: 33
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b7931680734fb12b0800000000000000
-      internalID: -5612623993386223237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Orc rider-Idle_5
-      rect:
-        serializedVersion: 2
-        x: 536
-        y: 42
-        width: 33
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81c015b90958ba7f0800000000000000
-      internalID: -600239269196264424
+      spriteID: e13200cf5f4481380800000000000000
+      internalID: -9000368032014392546
       vertices: []
       indices: 
       edges: []
@@ -272,13 +334,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Orc rider-Idle_0: -6967218827304948987
-      Orc rider-Idle_1: -2582689681796817123
-      Orc rider-Idle_2: 5239070887845672902
-      Orc rider-Idle_3: 8711236559198195290
-      Orc rider-Idle_4: -5612623993386223237
-      Orc rider-Idle_5: -600239269196264424
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
