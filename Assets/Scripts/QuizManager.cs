@@ -178,7 +178,7 @@ public class QuizManager : MonoBehaviour
             }
             if (bossAnimator != null)
             {
-                bossAnimator.Play("BossMap4", 0, 0f);
+                bossAnimator.Play("BossMap2", 0, 0f);
 
                 if (Random.Range(1, 3) == 1)
                 {
