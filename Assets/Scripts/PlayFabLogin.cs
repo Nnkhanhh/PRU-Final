@@ -12,6 +12,10 @@ public class PlayFabLogin : MonoBehaviour
 	public TextMeshProUGUI messageText;
 	public AuthUIManager authUIManager;
 
+	private void Awake()
+	{
+		DontDestroyOnLoad(gameObject);
+	}
 	public void OnLoginButton()
 	{
 		var request = new LoginWithPlayFabRequest
@@ -89,17 +93,18 @@ public class PlayFabLogin : MonoBehaviour
 
 	public void SaveCurrentMap(int mapIndex)
 	{
+		Debug.Log("[PlayFabLogin] Gọi SaveCurrentMap với mapIndex = " + mapIndex);
 		var request = new PlayFab.ClientModels.UpdateUserDataRequest
 		{
 			Data = new System.Collections.Generic.Dictionary<string, string>
-			{
-				{ "CurrentMap", mapIndex.ToString() }
-			}
+		{
+			{ "CurrentMap", mapIndex.ToString() }
+		}
 		};
 		PlayFabClientAPI.UpdateUserData(request, result => {
-			Debug.Log("Map saved: " + mapIndex);
+			Debug.Log("[PlayFabLogin] Map đã lưu thành công lên PlayFab: " + mapIndex);
 		}, error => {
-			Debug.LogError("Save map error: " + error.ErrorMessage);
+			Debug.LogError("[PlayFabLogin] Lỗi lưu map lên PlayFab: " + error.ErrorMessage);
 		});
 	}
 
