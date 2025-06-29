@@ -22,7 +22,7 @@ public class QuizController : ControllerBase
         var questions = await _context.QuizQuestions
             .Where(q => q.MapLevel == level)
             .OrderBy(q => Guid.NewGuid())
-            .Take(10)
+            .Take(20)
             .ToListAsync();
 
         return Ok(questions);
