@@ -49,24 +49,52 @@ public class PlayFabLogin : MonoBehaviour
 	{
 		messageText.text = "Đăng nhập thành công!";
 		passwordInput.text = "";
-		// Lấy map đã lưu từ PlayFab UserData
-		PlayFabClientAPI.GetUserData(new GetUserDataRequest(), (userDataResult) =>
-		{
-			int mapIndex = 1;
-			if (userDataResult.Data != null && userDataResult.Data.ContainsKey("CurrentMap"))
-				int.TryParse(userDataResult.Data["CurrentMap"].Value, out mapIndex);
+        // Lấy map đã lưu từ PlayFab UserData
 
-			GameSession.CurrentMap = mapIndex; // Lưu vào biến tĩnh
-			SceneManager.LoadScene("Menu"); // Chuyển qua Menu Game
-		},
-		(error) => {
+        // Set display name to the username (only once)
+        UpdateDisplayName(usernameInput.text);
+
+        PlayFabClientAPI.GetUserData(new GetUserDataRequest(), (userDataResult) =>
+        {
+            int mapIndex = 1;
+            float totalElapsedTime = 0f;
+
+            if (userDataResult.Data != null)
+            {
+                if (userDataResult.Data.ContainsKey("CurrentMap"))
+                    int.TryParse(userDataResult.Data["CurrentMap"].Value, out mapIndex);
+
+                if (userDataResult.Data.ContainsKey("TotalElapsedTime"))
+                    float.TryParse(userDataResult.Data["TotalElapsedTime"].Value, out totalElapsedTime);
+            }
+
+            GameSession.CurrentMap = mapIndex;
+            GameSession.TotalElapsedTime = totalElapsedTime;
+
+            Debug.Log($"[Login] Loaded map: {mapIndex}, total time: {totalElapsedTime:F2}s");
+
+            SceneManager.LoadScene("Menu");
+        },
+        (error) => {
 			Debug.LogError("Lỗi lấy dữ liệu map: " + error.ErrorMessage);
 			GameSession.CurrentMap = 1;
 			SceneManager.LoadScene("Menu");
 		});
 	}
 
-	void OnLoginFailure(PlayFabError error)
+    void UpdateDisplayName(string displayName)
+    {
+        var request = new UpdateUserTitleDisplayNameRequest
+        {
+            DisplayName = displayName
+        };
+
+        PlayFabClientAPI.UpdateUserTitleDisplayName(request,
+            result => Debug.Log($"✅ Display name set to: {result.DisplayName}"),
+            error => Debug.LogWarning("⚠️ Failed to set display name: " + error.GenerateErrorReport()));
+    }
+
+    void OnLoginFailure(PlayFabError error)
 	{
 		messageText.text = "Đăng nhập thất bại: " + error.ErrorMessage;
 		passwordInput.text = "";
@@ -78,7 +106,7 @@ public class PlayFabLogin : MonoBehaviour
 		passwordInput.text = "";
 		confirmPasswordInput.text = "";
 
-		SaveCurrentMap(1);
+		SaveCurrentMap(1,0);
 
 		if (authUIManager != null)
 			authUIManager.ShowLoginUI();
@@ -91,15 +119,16 @@ public class PlayFabLogin : MonoBehaviour
 		confirmPasswordInput.text = "";
 	}
 
-	public void SaveCurrentMap(int mapIndex)
+	public void SaveCurrentMap(int mapIndex, float totalElapsedTime)
 	{
 		Debug.Log("[PlayFabLogin] Gọi SaveCurrentMap với mapIndex = " + mapIndex);
 		var request = new PlayFab.ClientModels.UpdateUserDataRequest
 		{
 			Data = new System.Collections.Generic.Dictionary<string, string>
 		{
-			{ "CurrentMap", mapIndex.ToString() }
-		}
+			{ "CurrentMap", mapIndex.ToString() },
+            { "TotalElapsedTime", totalElapsedTime.ToString("F2") }
+        }
 		};
 		PlayFabClientAPI.UpdateUserData(request, result => {
 			Debug.Log("[PlayFabLogin] Map đã lưu thành công lên PlayFab: " + mapIndex);
