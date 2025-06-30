@@ -6,10 +6,11 @@ public class MapManager : MonoBehaviour
 	public void GoToNextMap()
 	{
 		int nextMapIndex = GameSession.CurrentMap + 1;
+
 		var playfabLogin = Object.FindFirstObjectByType<PlayFabLogin>();
 		if (playfabLogin != null)
 		{
-			playfabLogin.SaveCurrentMap(nextMapIndex);
+			playfabLogin.SaveCurrentMap(nextMapIndex, GameSession.TotalElapsedTime);
 		}
 		else
 		{
