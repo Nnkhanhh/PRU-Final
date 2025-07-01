@@ -61,12 +61,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.1.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\WinManager.cs" />
     <Compile Include="Assets\Scripts\ArrowCollision.cs" />
     <Compile Include="Assets\Scripts\LevelTimer.cs" />
     <Compile Include="Assets\Scripts\QuizManager.cs" />
     <Compile Include="Assets\Scripts\HealthCollectible.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\TrapDeath.cs" />
+    <Compile Include="Assets\Scripts\PortalTrigger.cs" />
     <Compile Include="Assets\Scripts\Enemy_Sideways.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\PlayFabLogin.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Assets\Scripts\EnemyDamage.cs" />
     <Compile Include="Assets\Scripts\AxeSwingTrap.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\TriggerQuizZone.cs" />
     <Compile Include="Assets\Scripts\ShottingTrap.cs" />
     <Compile Include="Assets\Scripts\MovingFlatform.cs" />

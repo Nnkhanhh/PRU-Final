@@ -10,6 +10,7 @@ TagManager:
   - MovingPlatform
   - Enemy
   - Boss
+  - Win
   layers:
   - Default
   - TransparentFX
